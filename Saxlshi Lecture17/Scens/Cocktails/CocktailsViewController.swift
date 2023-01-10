@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CocktailsViewController.swift
 //  Saxlshi Lecture17
 //
 //  Created by Giorgi Goginashvili on 1/9/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CocktailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
