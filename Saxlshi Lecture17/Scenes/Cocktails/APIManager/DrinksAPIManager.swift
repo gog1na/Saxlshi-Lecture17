@@ -13,8 +13,8 @@ import Foundation
  https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail
  */
 
-enum DrinkType {
-    case alcoholic
+enum DrinkType: Int {
+    case alcoholic = 0
     case nonAlcoholic
     case cocktail
     
@@ -46,7 +46,9 @@ class DrinksAPIManager: DrinksAPIManagerProtocol {
             guard let data = data else { return }
             do {
                 let decodedData = try JSONDecoder().decode(DrinkResponse.self, from: data)
-                complition(.success(decodedData))
+                DispatchQueue.main.async {
+                    complition(.success(decodedData))
+                }
             } catch {
                 complition(.failure(error))
             }

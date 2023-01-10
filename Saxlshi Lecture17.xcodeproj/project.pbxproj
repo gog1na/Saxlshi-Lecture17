@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		251BCBE6296D586F007B495F /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251BCBE5296D586F007B495F /* Drink.swift */; };
 		251BCBE9296D5F12007B495F /* DrinksAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251BCBE8296D5F12007B495F /* DrinksAPIManager.swift */; };
+		251BCBEB296D6EE0007B495F /* CocktailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251BCBEA296D6EE0007B495F /* CocktailsViewController.swift */; };
+		251BCBEF296D703D007B495F /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251BCBED296D703D007B495F /* DrinkTableViewCell.swift */; };
+		251BCBF0296D703D007B495F /* DrinkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251BCBEE296D703D007B495F /* DrinkTableViewCell.xib */; };
+		251BCBF3296D735A007B495F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 251BCBF2296D735A007B495F /* Kingfisher */; };
 		2554B9FA296C4B4F00C2414B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554B9F9296C4B4F00C2414B /* AppDelegate.swift */; };
 		2554B9FC296C4B4F00C2414B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554B9FB296C4B4F00C2414B /* SceneDelegate.swift */; };
-		2554B9FE296C4B4F00C2414B /* CocktailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2554B9FD296C4B4F00C2414B /* CocktailsViewController.swift */; };
 		2554BA01296C4B4F00C2414B /* Cocktails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2554B9FF296C4B4F00C2414B /* Cocktails.storyboard */; };
 		2554BA03296C4B5600C2414B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2554BA02296C4B5600C2414B /* Assets.xcassets */; };
 		2554BA06296C4B5600C2414B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2554BA04296C4B5600C2414B /* LaunchScreen.storyboard */; };
@@ -20,10 +23,12 @@
 /* Begin PBXFileReference section */
 		251BCBE5296D586F007B495F /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		251BCBE8296D5F12007B495F /* DrinksAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksAPIManager.swift; sourceTree = "<group>"; };
+		251BCBEA296D6EE0007B495F /* CocktailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsViewController.swift; sourceTree = "<group>"; };
+		251BCBED296D703D007B495F /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
+		251BCBEE296D703D007B495F /* DrinkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkTableViewCell.xib; sourceTree = "<group>"; };
 		2554B9F6296C4B4F00C2414B /* Saxlshi Lecture17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Saxlshi Lecture17.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2554B9F9296C4B4F00C2414B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2554B9FB296C4B4F00C2414B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2554B9FD296C4B4F00C2414B /* CocktailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsViewController.swift; sourceTree = "<group>"; };
 		2554BA00296C4B4F00C2414B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Cocktails.storyboard; sourceTree = "<group>"; };
 		2554BA02296C4B5600C2414B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2554BA05296C4B5600C2414B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				251BCBF3296D735A007B495F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +63,15 @@
 			path = APIManager;
 			sourceTree = "<group>";
 		};
+		251BCBEC296D6FE2007B495F /* DrinkTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				251BCBED296D703D007B495F /* DrinkTableViewCell.swift */,
+				251BCBEE296D703D007B495F /* DrinkTableViewCell.xib */,
+			);
+			path = DrinkTableViewCell;
+			sourceTree = "<group>";
+		};
 		2554B9ED296C4B4F00C2414B = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				2554BA0D296C4D7300C2414B /* App */,
-				2554BA10296C4DB100C2414B /* Scens */,
+				2554BA10296C4DB100C2414B /* Scenes */,
 				2554BA0E296C4D7C00C2414B /* Resources */,
 				2554BA0F296C4D8600C2414B /* SupportingFiles */,
 			);
@@ -109,13 +124,13 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		2554BA10296C4DB100C2414B /* Scens */ = {
+		2554BA10296C4DB100C2414B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				2554BA11296C4DB900C2414B /* Launch */,
 				2554BA12296C4DE100C2414B /* Cocktails */,
 			);
-			path = Scens;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		2554BA11296C4DB900C2414B /* Launch */ = {
@@ -131,7 +146,8 @@
 			children = (
 				251BCBE4296D585B007B495F /* Model */,
 				251BCBE7296D5ED3007B495F /* APIManager */,
-				2554B9FD296C4B4F00C2414B /* CocktailsViewController.swift */,
+				251BCBEC296D6FE2007B495F /* DrinkTableViewCell */,
+				251BCBEA296D6EE0007B495F /* CocktailsViewController.swift */,
 				2554B9FF296C4B4F00C2414B /* Cocktails.storyboard */,
 			);
 			path = Cocktails;
@@ -153,6 +169,9 @@
 			dependencies = (
 			);
 			name = "Saxlshi Lecture17";
+			packageProductDependencies = (
+				251BCBF2296D735A007B495F /* Kingfisher */,
+			);
 			productName = "Saxlshi Lecture17";
 			productReference = 2554B9F6296C4B4F00C2414B /* Saxlshi Lecture17.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +200,9 @@
 				Base,
 			);
 			mainGroup = 2554B9ED296C4B4F00C2414B;
+			packageReferences = (
+				251BCBF1296D735A007B495F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 2554B9F7296C4B4F00C2414B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -197,6 +219,7 @@
 			files = (
 				2554BA06296C4B5600C2414B /* LaunchScreen.storyboard in Resources */,
 				2554BA03296C4B5600C2414B /* Assets.xcassets in Resources */,
+				251BCBF0296D703D007B495F /* DrinkTableViewCell.xib in Resources */,
 				2554BA01296C4B4F00C2414B /* Cocktails.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,10 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2554B9FE296C4B4F00C2414B /* CocktailsViewController.swift in Sources */,
+				251BCBEB296D6EE0007B495F /* CocktailsViewController.swift in Sources */,
 				2554B9FA296C4B4F00C2414B /* AppDelegate.swift in Sources */,
 				251BCBE9296D5F12007B495F /* DrinksAPIManager.swift in Sources */,
 				2554B9FC296C4B4F00C2414B /* SceneDelegate.swift in Sources */,
+				251BCBEF296D703D007B495F /* DrinkTableViewCell.swift in Sources */,
 				251BCBE6296D586F007B495F /* Drink.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +452,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		251BCBF1296D735A007B495F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		251BCBF2296D735A007B495F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 251BCBF1296D735A007B495F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2554B9EE296C4B4F00C2414B /* Project object */;
 }

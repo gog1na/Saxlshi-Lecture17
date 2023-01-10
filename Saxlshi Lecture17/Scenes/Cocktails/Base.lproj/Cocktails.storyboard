@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cocktails View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CocktailsViewController" customModule="Saxlshi_Lecture17" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Rvq-QE-yzt">
+                                <rect key="frame" x="0.0" y="59" width="393" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="g3s-al-Qr8"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Alcoholic"/>
+                                    <segment title="Non Alcoholic"/>
+                                    <segment title="Cocktail"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didTapDrinkType:" destination="BYZ-38-t0r" eventType="valueChanged" id="s2j-ix-RgV"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="L6M-fn-wdO">
+                                <rect key="frame" x="0.0" y="104" width="393" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rvq-QE-yzt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AkD-wd-nhf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L6M-fn-wdO" secondAttribute="bottom" id="CmV-Pa-ctq"/>
+                            <constraint firstItem="Rvq-QE-yzt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ejk-Zi-CZd"/>
+                            <constraint firstItem="L6M-fn-wdO" firstAttribute="top" secondItem="Rvq-QE-yzt" secondAttribute="bottom" id="QhC-8m-LDV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rvq-QE-yzt" secondAttribute="trailing" id="YH4-lG-hH7"/>
+                            <constraint firstItem="L6M-fn-wdO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ni1-Ra-Beb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L6M-fn-wdO" secondAttribute="trailing" id="sKB-CO-Lnp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="L6M-fn-wdO" id="0ya-L7-3t8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
